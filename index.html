@@ -130,96 +130,6 @@ body {
     font-size: 2em;
     color: var(--gold-1);
 }
-
-/* Contenedor de flores */
-.flowers {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: 0;
-}
-
-/* Cada flor */
-.flower {
-    position: absolute;
-    bottom: -50px;
-    width: 40px;
-    height: 40px;
-    animation: rise 6s linear infinite;
-    opacity: 0.9;
-}
-
-/* Cada pétalo */
-.flower .petal {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background: radial-gradient(circle, pink 40%, #ff4da6 90%);
-    border-radius: 50% 50% 0 50%;
-    transform-origin: bottom right;
-}
-
-.flower .petal:nth-child(1) {
-    transform: rotate(0deg) translate(10px, -10px);
-}
-.flower .petal:nth-child(2) {
-    transform: rotate(72deg) translate(10px, -10px);
-}
-.flower .petal:nth-child(3) {
-    transform: rotate(144deg) translate(10px, -10px);
-}
-.flower .petal:nth-child(4) {
-    transform: rotate(216deg) translate(10px, -10px);
-}
-.flower .petal:nth-child(5) {
-    transform: rotate(288deg) translate(10px, -10px);
-}
-
-/* Centro de la flor */
-.flower::after {
-    content: "";
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 16px;
-    height: 16px;
-    background: yellow;
-    border-radius: 50%;
-}
-
-/* Animación de subida */
-@keyframes rise {
-    0% {
-        transform: translateY(0) scale(0.6);
-        opacity: 0;
-    }
-    20% {
-        opacity: 1;
-    } 
-    100% {
-        transform: translateY(-500px) scale(1.2);
-        opacity: 0;
-    }
-}
-
-.flower:nth-child(2) {
-    left: 60px;
-    animation-delay: .5s;
-}
-.flower:nth-child(3) {
-    left: 150px;
-    animation-delay: 1s;
-}
-.flower:nth-child(4) {
-    left: 250px;
-    animation-delay: 1.5s;
-}
-.flower:nth-child(5) {
-    left: 330px;
-    animation-delay: 2s;
-}
-
 /* Globos dorados */
 .balloons {
     position: absolute;
@@ -420,34 +330,7 @@ body {
                 </p>
                 <p>PARRAFO ULTIMO. ✨</p>
                 <img src="2.jpg" alt="" width="150" height="150" style="border-radius: 10%; margin-top: 20px;">
-            </div>
-            <div class="flowers">
-                <div class="flower" style="left:50px; animation-delay:0s;">
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                </div>
-
-                <div class="flower" style="left:120px; animation-delay:1s;">
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                </div>
-
-                <div class="flower" style="left:200px; animation-delay:2s;">
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                    <div class="petal"></div>
-                </div>
-            </div>
-        </div>
-
+                                   
         <!-- Portada (frente + dorso) -->
         <div class="cover">
             <!-- FRENTE -->
